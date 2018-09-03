@@ -1,3 +1,3 @@
 # Plotting
 
-I use [gnuplot](gnuplot.info) for plotting.
+I use [gnuplot](http://gnuplot.info) for plotting.
