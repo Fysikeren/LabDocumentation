@@ -34,7 +34,7 @@ I use [gnuplot](http://gnuplot.info) for plotting and have made separate scripts
 [plotDRlog.plt](Scripts/plotDRlog.plt) plots the pressures in the helium system. 
 [plotDRtemps.plt](Scripts/plotDRtemps.plt) plots the temperatures different places in the dilution refrigerator.
 
-The output of these scripts are ```PNG``` files that are placed in the folder ```/home/pi/Data/Plots/```.
+The output of these scripts are PNG files that are placed in the folder ```/home/pi/Data/Plots/```.
 
 ## Uploading to the website
 
