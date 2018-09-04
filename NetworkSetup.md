@@ -12,12 +12,23 @@ This LAN might also be used for the (as yet nonexisting) controller PC, since it
 There is no reliable WiFi connection available in the lab (Eduroam relies on a specific person's identity and is not well suited for this purpose), so I have decided to set up a wireless router (with nothing on the WAN side) and use that for the lab LAN.
 The PC will be connected by cable.
 
-I set up the router DHCP to give the Pi and PC specific IPs and follow this guide to setup on the Pi:
-[Connect to offline network on second interface](https://unix.stackexchange.com/questions/177973/connect-to-offline-network-on-second-interface)
+I set up the Windows PC with the static IP address ```192.168.8.10```, which is outside the range of IPs that the router assigns.
+The router itself has the IP ```192.168.8.1``` and it assigned ```192.168.8.100``` to the Pi.
+
+![The network setup on the Windows PC](Figures/LANonWindows.png)
 
 ## Samba
 
-The Windows PC shares the folders by SMB.
+The Windows PC shares a number of folders, and I can access them on the Pi by pointing my file browser to ```smb://192.168.8.10/```.
+The folder I use for my logs is ```C:\Cryogenic Software\Logs```, and it is shared under the name ```MagnetLogs```.
+I mount that folder in the Pi filesystem with the command
+```
+sudo mount -t cifs //192.168.8.10/MagnetLogs /mnt/magnetlogs -o user=username,pass=password,dom=domain,vers=1.0
+```
+which I saved in the bash script ```mountShare.sh```.
+The option ```vers=1.0``` is important since the standard is a newer version, but Windows XP uses the old 1.0.
+
+I would like to automatically mount the shared folder using the fstab on the Pi, but I haven't implemented that yet.
 
 ## NTP
 
