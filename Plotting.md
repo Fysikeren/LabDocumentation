@@ -51,7 +51,7 @@ The command as shown will of course rely on me having placed the Pi's public key
 
 ## Script for copying, plotting and uploading
 
-I assembled all of this into a script by the name of ```runAll.sh```, which includes all of the above commands, as well as commands printing the time and date the script is run and 
+I assembled all of this into a script by the name of [runAll.sh](Scripts/runAll.sh), which includes all of the above commands, as well as commands printing the time and date the script is run and 
 
 The output of a successful run will look like this:
 ```
