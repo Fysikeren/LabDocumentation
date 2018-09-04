@@ -101,3 +101,5 @@ In the crontab on the Pi, i have added the line
 */10 * * * * /home/pi/Data/runAll.sh > /home/pi/Data/cronLog.txt
 ```
 which runs ```runAll.sh``` every ten minutes, and saves the output to ```cronLog.txt```, overwriting the file each time.
+
+For this to work properly, I have made sure to give absolute paths in all scripts and commands.
