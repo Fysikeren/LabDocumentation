@@ -3,12 +3,12 @@
 The Windows PC runs a group of LabView programs that control the dilution refrigerator and log the magnet temperatures as well as the DR pressures and temperatures.
 On the machine is also a LabView program to visualize the data saved to the log files, but I wanted a way to follow the status of the equipment without being in the lab.
 
-My solution is to use the Raspberry Pi (which can access both the PC and the internet, see [Network Setup](NetworkSetup.md)) to automatically copy the logged data off the PC, plot it, and upload it to my website on the NBI server.
+My solution is to use the Raspberry Pi (which can access both the PC and the internet, see [Network setup](NetworkSetup.md)) to automatically copy the logged data off the PC, plot it, and upload it to my website on the NBI server.
 
 ## Mounting the shared folder from the Windows PC
 
 I have mounted the shared folder in ```/mnt/magnetlogs/```.
-This is described in [Network Setup](NetworkSetup.md).
+This is described in [Network setup](NetworkSetup.md).
 
 ## Copying the data
 
