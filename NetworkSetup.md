@@ -1,7 +1,5 @@
 # Network setup
 
-## Background
-
 The computer that reads out data from the magnet cryostat and the DR runs Windows XP and is apparrently virus infected.
 But since everything runs smoothly in Labview on that machine, I don't want to replace it right away (it has much higher priority to set up a computer for controlling the magnetic field and the susceptometer).
 I have therefore bought a Raspberry Pi 3 B+, and plan to connect it to both the KU network and a LAN especially for the Pi and the PC, such that the Pi is the only machine connected to the internet.
