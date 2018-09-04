@@ -103,3 +103,11 @@ In the crontab on the Pi, i have added the line
 which runs ```runAll.sh``` every ten minutes, and saves the output to ```cronLog.txt```, overwriting the file each time.
 
 For this to work properly, I have made sure to give absolute paths in all scripts and commands.
+
+## Copying the newest plots
+
+If I want to follow the logs directly on another machine, I can run
+```
+rsync pi@kepler:Data/Plots/*.png .
+```
+to copy the figures to the current folder.
