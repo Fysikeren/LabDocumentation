@@ -15,7 +15,7 @@ The PC will be connected by cable.
 I set up the Windows PC with the static IP address ```192.168.8.10```, which is outside the range of IPs that the router assigns.
 The router itself has the IP ```192.168.8.1``` and it assigned ```192.168.8.100``` to the Pi.
 
-![The network setup on the Windows PC](Figures/Network Setup.png)
+![The network setup on the Windows PC](Figures/NetworkSetup.png)
 
 ## Samba
 
