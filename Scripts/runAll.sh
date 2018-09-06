@@ -24,7 +24,7 @@ cp -p "`ls -dtr1 /home/pi/Data/Logfiles/*.dat | tail -1`" /home/pi/Data/DRtemps.
 
 # Upload plots to website:
 printf "\nUploading plots to the website.\n"
-rsync -vh /home/pi/Data/Plots/*.png ljt123@muon.nbi.dk:public_html/Figures/
+rsync -vh /home/pi/Data/Plots/*.png myon:public_html/Figures/
 
 # Print the current date and time, at script end:
 printf "\n"
