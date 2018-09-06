@@ -51,11 +51,11 @@ The command as shown will of course rely on me having placed the Pi's public key
 
 ## Script for copying, plotting and uploading
 
-I assembled all of this into a script by the name of [runAll.sh](Scripts/runAll.sh), which includes all of the above commands, as well as commands printing the time and date the script is run and 
+I assembled all of this into a script by the name of [runAll.sh](Scripts/runAll.sh), which includes all of the above commands, as well as commands printing the time and date the script is run.
 
-The output of a successful run will look like this:
+The output of a successful run looks like this:
 ```
-runAll.sh was started on: 2018-09-04 12:00:02
+runAll.sh was started on: 2018-09-06 11:30:01
 
 Copying logs from the Windows machine.
 sending incremental file list
@@ -64,8 +64,8 @@ sending incremental file list
 2018-08-31_Magnet.logtext
 Temps_2018-08-31-14-33-44.dat
 
-sent 7.46M bytes  received 92 bytes  1.66M bytes/sec
-total size is 7.63M  speedup is 1.02
+sent 11.05M bytes  received 92 bytes  1.16M bytes/sec
+total size is 11.22M  speedup is 1.02
 
 Plotting magnet temperatures.
 
@@ -84,14 +84,15 @@ DRtempsOhmRecent.png
 DRtempsRecent.png
 magnetTempAll300K.png
 magnetTempRecent004K.png
-magnetTempRecent010K.png
+magnetTempRecent015K.png
 magnetTempRecent300K.png
 magnetTempRecentCoils.png
 
-sent 458,647 bytes  received 5,483 bytes  928,260.00 bytes/sec
-total size is 606,479  speedup is 1.31
+sent 416.22K bytes  received 5.21K bytes  280.95K bytes/sec
+total size is 580.87K  speedup is 1.38
 
-runAll.sh finished on: 2018-09-04 12:00:46
+runAll.sh finished on: 2018-09-06 11:30:57
+
 ```
 
 ## Cronjob
