@@ -24,7 +24,7 @@ set ylabel 'Temperature [K]'
 set format x '%.1f'
 set format y '%.1f'
 set output '/home/pi/Data/Plots/magnetTempRecentCoils.png'
-set yrange [3.3:4.3]
+set yrange [3.2:6.2]
 plot '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
 	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil'
 
@@ -44,8 +44,8 @@ plot '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Up
 
 set format x '%.1f'
 set format y '%.0f'
-set output '/home/pi/Data/Plots/magnetTempRecent010K.png'
-set yrange [0:10]
+set output '/home/pi/Data/Plots/magnetTempRecent015K.png'
+set yrange [0:15]
 plot '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
 	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
 	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
