@@ -1,6 +1,6 @@
 # LabDocumentation
 
-Documentation for the machines (computers and lab equipment) in the magnetism lab underneath the D building at HCØ, University of Copenhagen
+Documentation for the machines (computers and lab equipment) in the suceptometry lab at the X-ray and Neutron Science section, Niels Bohr Institute, University of Copenhagen.
 
 ## Contents
 
