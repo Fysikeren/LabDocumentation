@@ -16,7 +16,7 @@ set grid back ls 12
 # set key top right
 set key right outside
 set xtics rotate
-set xlabel 'Time since reboot [hours]'
+set xlabel 'Time since restart [hours]'
 set ylabel 'Temperature [K]'
 
 # When plotting, I divide the x values by 3600 to get the times in hours.
