@@ -5,7 +5,8 @@ date +"runAll.sh was started on: %Y-%m-%d %H:%M:%S"
 
 # Copy my logs from the Windows machine to this Pi:
 printf "\nCopying logs from the Windows machine.\n"
-rsync -avuh /mnt/magnetlogs/MMTest/* /home/pi/Data/Logfiles/
+# rsync -avuh /mnt/magnetlogs/MMTest/* /home/pi/Data/Logfiles/
+rsync -avuh /mnt/susceptometry/* /home/pi/Data/Logfiles/
 
 # Copy newest magnet temperature log to temporary file and plot it:
 printf "\nPlotting magnet temperatures.\n"

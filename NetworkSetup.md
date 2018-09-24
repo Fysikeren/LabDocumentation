@@ -18,10 +18,10 @@ The router itself has the IP ```192.168.8.1``` and it assigned ```192.168.8.100`
 ## Samba
 
 The Windows PC shares a number of folders, and I can access them on the Pi by pointing my file browser to ```smb://192.168.8.10/```.
-The folder I use for my logs is ```C:\Cryogenic Software\Logs```, and it is shared under the name ```MagnetLogs```.
+The folder I use for my logs is ```C:\Suceptometry```, and it is shared under the name ```Suceptometry```.
 I mount that folder in the Pi filesystem with the command
 ```
-sudo mount -t cifs //192.168.8.10/MagnetLogs /mnt/magnetlogs -o user=username,pass=password,dom=domain,vers=1.0
+sudo mount -t cifs //192.168.8.10/Suceptometry /mnt/suceptometry -o user=username,pass=password,dom=domain,vers=1.0
 ```
 which I saved in the bash script ```mountShare.sh```.
 The option ```vers=1.0``` is important since the standard is a newer version, but Windows XP uses the old 1.0.
