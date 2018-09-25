@@ -5,10 +5,18 @@ In Labview, a number of scripts are available for controlling the dilution refri
 
 Later, I will make a system to control the DR, the magnet and a lock-in amplifier, to be able to make measurements controlled solely by the PC.
 
-![The LabView program that emulates the front panel on the dilution fridge](Figures/LeidenPanel.png)
+## Magnet temperatures
 
 ![The LabView program that reads the temperatures different places in the magnet assembly and writes them to a log file](Figures/ThermometerScanner.png)
 
+## DR front panel and pressures
+
+![The LabView program that emulates the front panel on the dilution fridge](Figures/LeidenPanel.png)
+
+## DR temperatures
+
 ![The LabView program that reads the temperatures in the dilution fridge and writes them to a log file](Figures/TC.png)
+
+## Viewing the logged data
 
 ![The LabView program that plots the different logs](Figures/DisplayAllLogs.png)
