@@ -5,6 +5,12 @@ In Labview, a number of scripts are available for controlling the dilution refri
 
 Later, I will make a system to control the DR, the magnet and a lock-in amplifier, to be able to make measurements controlled solely by the PC.
 
+## Saving log files
+
+I save all log files in the folder ```C:\Suceptometry```, which is shared by Windows XP under the name ```Suceptometry```.
+I can then copy the logs to a different machine on the network and plot the data.
+See [Network setup](NetworkSetup.md) for details on how I do that.
+
 ## Magnet temperatures
 
 ![The LabView program that reads the temperatures different places in the magnet assembly and writes them to a log file](Figures/ThermometerScanner.png)
