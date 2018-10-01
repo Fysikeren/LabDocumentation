@@ -8,3 +8,5 @@ Documentation for the machines (computers and lab equipment) in the suceptometry
 * [Network setup](NetworkSetup.md)
 * [Automated plotting of logged data](Plotting.md)
 * [Arduino-controlled stepper motor](ArduinoStepper.md)
+
+I try to follow [semantic versioning](https://semver.org/).
