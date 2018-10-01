@@ -47,19 +47,19 @@ plot '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
 	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:16 t 'P (still)'
 
 set output '/home/pi/Data/Plots/DRlogAll.png'
-plot '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:3 t 'P2?',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:5 t 'P3?',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:6 t 'P4',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:7 t 'P5',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:9 t 'Dump 20 l',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:10 t '??',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:11 t '??',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:12 t '??',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:13 t '??',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:14 t '??',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:16 t 'P (still)'
+plot '/home/pi/Data/DRlog.txt' u 1:3 t 'P2?',\
+	 '/home/pi/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
+	 '/home/pi/Data/DRlog.txt' u 1:5 t 'P3?',\
+	 '/home/pi/Data/DRlog.txt' u 1:6 t 'P4',\
+	 '/home/pi/Data/DRlog.txt' u 1:7 t 'P5',\
+	 '/home/pi/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
+	 '/home/pi/Data/DRlog.txt' u 1:9 t 'Dump 20 l',\
+	 '/home/pi/Data/DRlog.txt' u 1:10 t '??',\
+	 '/home/pi/Data/DRlog.txt' u 1:11 t '??',\
+	 '/home/pi/Data/DRlog.txt' u 1:12 t '??',\
+	 '/home/pi/Data/DRlog.txt' u 1:13 t '??',\
+	 '/home/pi/Data/DRlog.txt' u 1:14 t '??',\
+	 '/home/pi/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
+	 '/home/pi/Data/DRlog.txt' u 1:16 t 'P (still)'
 
 # pause -1 "Hit any key to continue"
