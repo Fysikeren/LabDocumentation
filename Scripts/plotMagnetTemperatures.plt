@@ -23,67 +23,67 @@ set ylabel 'Temperature [K]'
 # For the "recent" plots, I use only the last 360 values, which should correspond to the last hour (since LabView saves the values roughly every ten seconds).
 set format x '%.1f'
 set format y '%.1f'
-set output '/home/pi/Data/Plots/magnetTempRecentCoils.png'
+set output '/home/mathias/Data/Plots/magnetTempRecentCoils.png'
 # set yrange [3.2:6.2]
 # set yrange [0:300]
 set yrange [280:290]
-plot '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil'
+plot '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil'
 
 set format x '%.1f'
 set format y '%.1f'
-set output '/home/pi/Data/Plots/magnetTempRecent004K.png'
+set output '/home/mathias/Data/Plots/magnetTempRecent004K.png'
 set yrange [3:5]
-plot '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
+plot '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
 
 set format x '%.1f'
 set format y '%.0f'
-set output '/home/pi/Data/Plots/magnetTempRecent015K.png'
+set output '/home/mathias/Data/Plots/magnetTempRecent015K.png'
 set yrange [0:15]
-plot '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
+plot '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
 
 set format x '%.1f'
 set format y '%.0f'
-set output '/home/pi/Data/Plots/magnetTempRecent300K.png'
+set output '/home/mathias/Data/Plots/magnetTempRecent300K.png'
 set yrange [0:300]
-plot '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
-	 '< tail -n 360 /home/pi/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
+plot '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
+	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
 
 set format x '%.0f'
 set format y '%.0f'
-set output '/home/pi/Data/Plots/magnetTempAll300K.png'
+set output '/home/mathias/Data/Plots/magnetTempAll300K.png'
 set yrange [0:300]
-plot '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
-	 '/home/pi/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
+plot '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($2) t 'Upper HEx',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($3) t 'Lower HEx',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($4) t 'He pot',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($5) t '1st stage',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($6) t '2nd stage',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($9) t 'Switch',\
+	 '/home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($10) t 'He pot'
 
 # pause -1 "Hit any key to continue"

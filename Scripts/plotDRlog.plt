@@ -28,38 +28,38 @@ set xdata time
 set timefmt '%d/%m/%Y %H:%M:%S'
 set format x "%d/%m %H:%M"
 
-set output '/home/pi/Data/Plots/DRlogPs.png'
+set output '/home/mathias/Data/Plots/DRlogPs.png'
 # set yrange [0:1]
-plot '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:3 t 'P2?',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:5 t 'P3?',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:6 t 'P4',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:7 t 'P5'
+plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:3 t 'P2?',\
+	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
+	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:5 t 'P3?',\
+	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:6 t 'P4',\
+	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:7 t 'P5'
 
-set output '/home/pi/Data/Plots/DRlogDumps.png'
+set output '/home/mathias/Data/Plots/DRlogDumps.png'
 # set yrange [0:1]
-plot '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:9 t 'Dump 20 l'
+plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
+	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:9 t 'Dump 20 l'
 
-set output '/home/pi/Data/Plots/DRlogPIVCStill.png'
+set output '/home/mathias/Data/Plots/DRlogPIVCStill.png'
 # set autoscale y
-plot '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
-	 '< tail -n 60 /home/pi/Data/DRlog.txt' u 1:16 t 'P (still)'
+plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
+	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:16 t 'P (still)'
 
-set output '/home/pi/Data/Plots/DRlogAll.png'
-plot '/home/pi/Data/DRlog.txt' u 1:3 t 'P2?',\
-	 '/home/pi/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
-	 '/home/pi/Data/DRlog.txt' u 1:5 t 'P3?',\
-	 '/home/pi/Data/DRlog.txt' u 1:6 t 'P4',\
-	 '/home/pi/Data/DRlog.txt' u 1:7 t 'P5',\
-	 '/home/pi/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
-	 '/home/pi/Data/DRlog.txt' u 1:9 t 'Dump 20 l',\
-	 '/home/pi/Data/DRlog.txt' u 1:10 t '??',\
-	 '/home/pi/Data/DRlog.txt' u 1:11 t '??',\
-	 '/home/pi/Data/DRlog.txt' u 1:12 t '??',\
-	 '/home/pi/Data/DRlog.txt' u 1:13 t '??',\
-	 '/home/pi/Data/DRlog.txt' u 1:14 t '??',\
-	 '/home/pi/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
-	 '/home/pi/Data/DRlog.txt' u 1:16 t 'P (still)'
+set output '/home/mathias/Data/Plots/DRlogAll.png'
+plot '/home/mathias/Data/DRlog.txt' u 1:3 t 'P2?',\
+	 '/home/mathias/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
+	 '/home/mathias/Data/DRlog.txt' u 1:5 t 'P3?',\
+	 '/home/mathias/Data/DRlog.txt' u 1:6 t 'P4',\
+	 '/home/mathias/Data/DRlog.txt' u 1:7 t 'P5',\
+	 '/home/mathias/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
+	 '/home/mathias/Data/DRlog.txt' u 1:9 t 'Dump 20 l',\
+	 '/home/mathias/Data/DRlog.txt' u 1:10 t '??',\
+	 '/home/mathias/Data/DRlog.txt' u 1:11 t '??',\
+	 '/home/mathias/Data/DRlog.txt' u 1:12 t '??',\
+	 '/home/mathias/Data/DRlog.txt' u 1:13 t '??',\
+	 '/home/mathias/Data/DRlog.txt' u 1:14 t '??',\
+	 '/home/mathias/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
+	 '/home/mathias/Data/DRlog.txt' u 1:16 t 'P (still)'
 
 # pause -1 "Hit any key to continue"
