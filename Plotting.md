@@ -1,13 +1,13 @@
 # Automated plotting of logged data
 
-The Windows PC runs a group of LabView programs that control the dilution refrigerator and log the magnet temperatures as well as the DR pressures and temperatures.
+The ```LeidenDR``` Windows PC runs a group of LabView programs that control the dilution refrigerator and log the magnet temperatures as well as the DR pressures and temperatures.
 On the machine is also a LabView program to visualize the data saved to the log files, but I wanted a way to follow the status of the equipment without being in the lab.
 
-My solution is to use the Raspberry Pi (which can access both the PC and the internet, see [Network setup](NetworkSetup.md)) to automatically copy the logged data off the PC, plot it, and upload it to my website on the NBI server.
+My solution is to use the ```magnetlab``` Linux PC to automatically copy the logged data off the Windows PC, plot it, and upload it to my website on the NBI server.
 
 ## Mounting the shared folder from the Windows PC
 
-I have mounted the shared folder in ```/mnt/magnetlogs/```.
+I have mounted the shared folder in ```/mnt/suceptometry/```.
 This is described in [Network setup](NetworkSetup.md).
 
 ## Copying the data
@@ -15,7 +15,7 @@ This is described in [Network setup](NetworkSetup.md).
 Before plotting the data, I copy the logs from the network folder to the local drive
 
 ```bash
-rsync -avuh /mnt/magnetlogs/MMTest/* /home/pi/Data/Logfiles/
+rsync -avuh /mnt/susceptometry/* /home/mathias/Data/Logfiles/
 ```
 
 and use the local copy for the plotting.
@@ -23,9 +23,9 @@ and use the local copy for the plotting.
 I then copy the newest versions of each log file from ```Data/Logfiles/``` to ```Data/```, renaming them, so the plotting script can always find the files under their expected names:
 
 ```bash
-cp -p "`ls -dtr1 /home/pi/Data/Logfiles/*Magnet.logtext | tail -1`" /home/pi/Data/magnetTemperatures.txt
-cp -p "`ls -dtr1 /home/pi/Data/Logfiles/*DR.log | tail -1`" /home/pi/Data/DRlog.txt
-cp -p "`ls -dtr1 /home/pi/Data/Logfiles/*.dat | tail -1`" /home/pi/Data/DRtemps.txt
+cp -p "`ls -dtr1 /home/mathias/Data/Logfiles/*Magnet.logtext | tail -1`" /home/mathias/Data/magnetTemperatures.txt
+cp -p "`ls -dtr1 /home/mathias/Data/Logfiles/*DR.log | tail -1`" /home/mathias/Data/DRlog.txt
+cp -p "`ls -dtr1 /home/mathias/Data/Logfiles/*.dat | tail -1`" /home/mathias/Data/DRtemps.txt
 ```
 
 This makes use of ```ls``` to get the name of the newest file matching a given pattern.
@@ -38,7 +38,7 @@ I use [gnuplot](http://gnuplot.info) for plotting and have made separate scripts
 [plotDRlog.plt](Scripts/plotDRlog.plt) plots the pressures in the helium system.
 [plotDRtemps.plt](Scripts/plotDRtemps.plt) plots the temperatures different places in the dilution refrigerator.
 
-The output of these scripts are PNG files that are placed in the folder ```/home/pi/Data/Plots/```.
+The output of these scripts are PNG files that are placed in the folder ```/home/mathias/Data/Plots/```.
 
 ## Uploading to the website
 
@@ -50,7 +50,7 @@ The plots can also be seen in [this markdown file](ShowPlots.md).
 After all figures are generated, I upload them to the website using
 
 ```bash
-rsync -vh /home/pi/Data/Plots/*.png myon:public_html/Figures/
+rsync -vh /home/mathias/Data/Plots/*.png myon:public_html/Figures/
 ```
 
 where ```myon``` is the name I have given the server in my ```.ssh/config/``` file where I also specify the username.
@@ -106,22 +106,27 @@ runAll.sh finished on: 2018-09-06 11:30:57
 
 ## Cronjob
 
-In the crontab on the Pi, i have added the line
+In the crontab on ```magnetlab```, i have added the line
 
 ```crontab
-*/10 * * * * /home/pi/Data/runAll.sh > /home/pi/Data/cronLog.txt
+0 * * * * /home/mathias/Data/runAll.sh > /home/mathias/Data/cronLog.txt
 ```
 
-which runs ```runAll.sh``` every ten minutes, and saves the output to ```cronLog.txt```, overwriting the file each time.
+which runs ```runAll.sh``` every hour, and saves the output to ```cronLog.txt```, overwriting the file each time.
 
 For this to work properly, I have made sure to give absolute paths in all scripts and commands.
+
+## Teminal multiplexer
+
+I have started a tmux session by the name of ```plotting``` with two panes.
+In the left pane, I am running ```tail -f /home/mathias/Data/cronLog.txt``` and the right one is free to run commands.
 
 ## Copying the newest plots
 
 If I want to follow the logs directly on another machine, I can run
 
 ```bash
-rsync pi@kepler:Data/Plots/*.png .
+rsync mathias@lab:Data/Plots/*.png .
 ```
 
 to copy the figures to the current folder.
