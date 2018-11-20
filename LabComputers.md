@@ -4,7 +4,7 @@
 
 A Windows 10 PC delivered on November '18.
 Set up with a local administrator account.
-I will set up a purely local account for the measurements, and a personal (Microsoft and UCPH connected) account for myself.
+I will set up a purely local account for the measurements, and personal (Microsoft and UCPH connected) accounts for people working in the lab.
 
 ## LeidenDR
 
