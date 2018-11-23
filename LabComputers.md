@@ -2,9 +2,12 @@
 
 ## Susceptometry
 
-A Windows 10 PC delivered on November '18.
+A Windows 10 PC delivered in November '18.
 Set up with a local administrator account.
-I will set up a purely local account for the measurements, and personal (Microsoft and UCPH connected) accounts for people working in the lab.
+I have set up a purely local account for the measurements, and people working in the lab can have personal (Microsoft and UCPH connected) accounts.
+
+LabVIEW 2018 is installed along with NI-Visa, and the N9310A signal generator and the SR830 lock-in are connected and controllable from LabVIEW (the lock-in is connected through an NI GPIB-USB-HS controller).
+![The set-up of NI MAX](Figures/NIMAXSetup.png)
 
 ## LeidenDR
 
