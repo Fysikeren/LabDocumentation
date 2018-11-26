@@ -1,9 +1,32 @@
-# Automated plotting of logged data
+# Automated logging and plotting of data
 
-The ```LeidenDR``` Windows PC runs a group of LabView programs that control the dilution refrigerator and log the magnet temperatures as well as the DR pressures and temperatures.
-On the machine is also a LabView program to visualize the data saved to the log files, but I wanted a way to follow the status of the equipment without being in the lab.
+The ```LeidenDR``` Windows PC runs a group of Labview programs that control the dilution refrigerator and log the magnet temperatures as well as the DR pressures and temperatures.
+On the machine is also a Labview program to visualize the data saved to the log files, but I wanted a way to follow the status of the equipment without being in the lab.
 
 My solution is to use the ```magnetlab``` Linux PC to automatically copy the logged data off the Windows PC, plot it, and upload it to my website on the NBI server.
+
+## Saving log files
+
+The different Labview programs save logs as text files.
+I save all log files in the folder ```C:\Suceptometry```, which is shared by Windows XP under the name ```Suceptometry```.
+I can then copy the logs to a different machine on the network and plot the data.
+See [Network setup](NetworkSetup.md) for details on how I do that.
+
+### Magnet temperatures
+
+![The Labview program that reads the temperatures different places in the magnet assembly and writes them to a log file](Figures/ThermometerScanner.png)
+
+### DR front panel and pressures
+
+![The Labview program that emulates the front panel on the dilution fridge](Figures/LeidenPanel.png)
+
+### DR temperatures
+
+![The Labview program that reads the temperatures in the dilution fridge and writes them to a log file](Figures/TC.png)
+
+## Viewing the logged data
+
+![The Labview program that plots the different logs](Figures/DisplayAllLogs.png)
 
 ## Mounting the shared folder from the Windows PC
 

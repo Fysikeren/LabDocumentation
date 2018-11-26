@@ -5,8 +5,7 @@ Documentation for the machines (computers and lab equipment) in the suceptometry
 ## Contents
 
 * [Computers in the lab](LabComputers.md)
-* [Data acquisition](DataAcquisition.md)
 * [Network setup](NetworkSetup.md)
-* [Automated plotting of logged data](Plotting.md)
+* [Automated logging and plotting of data](Plotting.md)
 
 I try to follow [semantic versioning](https://semver.org/).
