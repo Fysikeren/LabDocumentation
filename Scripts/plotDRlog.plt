@@ -46,6 +46,7 @@ set output '/home/mathias/Data/Plots/DRlogPIVCStill.png'
 plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:16 t 'P (still)'
 
+set terminal pngcairo size 1920,1080 enhanced font 'Verdana,20'
 set output '/home/mathias/Data/Plots/DRlogAll.png'
 plot '/home/mathias/Data/DRlog.txt' u 1:3 t 'P2?',\
 	 '/home/mathias/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
