@@ -1,8 +1,8 @@
 #!/usr/bin/gnuplot
 reset
 
-# set terminal pngcairo size 1920,1080 enhanced font 'Verdana,20'
-set terminal pngcairo size 1024,576 enhanced font 'Verdana,20'
+set terminal pngcairo size 1920,1080 enhanced font 'Verdana,20'
+# set terminal pngcairo size 1024,576 enhanced font 'Verdana,20'
 
 # define axis
 # remove border on top and right and set color to gray
