@@ -11,7 +11,7 @@ I_still = 8.0 mA
 
 T_still = 895 mK
 
-P_still = 1.7·10-¹ mbar
+P_still = 1.7·10⁻¹ mbar
 
 P₅ ≈ 660 mbar
 
