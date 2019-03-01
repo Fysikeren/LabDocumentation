@@ -1,22 +1,5 @@
 # Dilution refrigerator
 
-In the DR/magnet logbook, Lise writes on May 20th 2016:
+The dilfridge in the lab is an _MCK50-100_ from _Leiden Cryogenics_.
 
----
-MC temperature has now been stable for 5 days at settings
-
-P¹_dump = P²_dump = 120 mbar
-
-I_still = 8.0 mA
-
-T_still = 895 mK
-
-P_still = 1.7·10⁻¹ mbar
-
-P₅ ≈ 660 mbar
-
-Flow = 43
-
-TMC = 25 mK
-
----
+![The Labview program that emulates the front panel on the dilution fridge](Figures/LeidenPanel.png)
