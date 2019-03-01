@@ -14,5 +14,6 @@ Documentation for the machines (computers and lab equipment) in the suceptometry
   * [Measurement equipment](BigBoxes.md)
 * Procedures
   * [Operating the magnet](MagnetOperation.md)
+  * [Operating the refrigerator](DilfridgeOperation.md)
 
 I try to follow [semantic versioning](https://semver.org/).
