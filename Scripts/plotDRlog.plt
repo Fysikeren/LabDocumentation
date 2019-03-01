@@ -18,7 +18,7 @@ set key right outside
 # set key below
 set xtics rotate
 set xlabel 'Date and time'
-set ylabel 'Pressure [mbar?]'
+set ylabel 'Pressure [bar]'
 
 # When plotting, I divide the x values by 3600 to get the times in hours.
 # For the "recent" plots, I use only the last 360 values, which should correspond to the last hour (since LabView saves the values roughly every ten seconds).
