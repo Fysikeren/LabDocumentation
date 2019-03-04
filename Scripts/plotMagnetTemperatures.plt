@@ -25,7 +25,6 @@ set format x '%.1f'
 set format y '%.1f'
 set output '/home/mathias/Data/Plots/magnetTempRecentCoils.png'
 # set yrange [3.2:6.2]
-# set yrange [0:300]
 set yrange [0:300]
 plot '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($7) t 'Inner coil',\
 	 '< tail -n 360 /home/mathias/Data/magnetTemperatures.txt' u ($1/3600):($8) t 'Outer coil'
