@@ -19,5 +19,6 @@ Documentation for the machines (computers and lab equipment) in the suceptometry
 ### Procedures
 
 * [Operating the magnet](MagnetOperation.md)
+* [Operating the DR](DilfridgeOperation.md)
 
 I try to follow [semantic versioning](https://semver.org/).
