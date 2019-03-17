@@ -26,25 +26,29 @@ set xdata time
 set timefmt '%Y-%m-%d %H:%M:%S'
 set format x "%d/%m %H:%M"
 
-set output '/home/mathias/Data/Plots/DRtempsRecent.png'
-set yrange [0:1000]
+set output '/home/mathias/Data/Plots/DRtempsMC.png'
+set yrange [0:500]
+# set autoscale y
+# set format y '%.1f'
+set ylabel 'Temperature [mK]'
+plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:13 t 'MC 1',\
+	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:14 t 'MC 2',\
+
+set output '/home/mathias/Data/Plots/DRtempsStill.png'
+set yrange [0:2000]
+# set autoscale y
+# set format y '%.1f'
+set ylabel 'Temperature [mK]'
+plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:12 t 'Still',\
+
+set output '/home/mathias/Data/Plots/DRtempsSorb.png'
+set yrange [0:5000]
+# set autoscale y
 # set format y '%.1f'
 set ylabel 'Temperature [mK]'
 plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:11 t 'Sorb',\
-	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:12 t 'Still',\
-	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:13 t 'MC 1',\
-	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:14 t 'MC 2',\
 
-set output '/home/mathias/Data/Plots/DRtempsOhmRecent.png'
-set autoscale y
-# set format y '%.0f'
-set ylabel 'Resistance [Ω]'
-plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:3 t 'Sorb',\
-	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:4 t 'Still',\
-	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:5 t 'MC 1',\
-	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:6 t 'MC 2',\
-
-set output '/home/mathias/Data/Plots/DRtemps.png'
+set output '/home/mathias/Data/Plots/DRtempsAll.png'
 set yrange [0:1000]
 # set format y '%.1f'
 set ylabel 'Temperature [mK]'
@@ -53,7 +57,7 @@ plot '/home/mathias/Data/DRtemps.txt' u 1:11 t 'Sorb',\
 	 '/home/mathias/Data/DRtemps.txt' u 1:13 t 'MC 1',\
 	 '/home/mathias/Data/DRtemps.txt' u 1:14 t 'MC 2',\
 
-set output '/home/mathias/Data/Plots/DRtempsOhm.png'
+set output '/home/mathias/Data/Plots/DRtempsAllOhm.png'
 set autoscale y
 # set format y '%.0f'
 set ylabel 'Resistance [Ω]'
@@ -63,4 +67,3 @@ plot '/home/mathias/Data/DRtemps.txt' u 1:3 t 'Sorb',\
 	 '/home/mathias/Data/DRtemps.txt' u 1:6 t 'MC 2',\
 
 # pause -1 "Hit any key to continue"
-
