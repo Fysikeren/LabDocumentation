@@ -27,29 +27,30 @@ set timefmt '%Y-%m-%d %H:%M:%S'
 set format x "%d/%m %H:%M"
 
 set output '/home/mathias/Data/Plots/DRtempsMC.png'
-set yrange [0:500]
-# set autoscale y
+# set yrange [0:500]
+set autoscale y
 # set format y '%.1f'
 set ylabel 'Temperature [mK]'
 plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:13 t 'MC 1',\
 	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:14 t 'MC 2',\
 
 set output '/home/mathias/Data/Plots/DRtempsStill.png'
-set yrange [0:2000]
-# set autoscale y
+# set yrange [0:2000]
+set autoscale y
 # set format y '%.1f'
 set ylabel 'Temperature [mK]'
 plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:12 t 'Still',\
 
 set output '/home/mathias/Data/Plots/DRtempsSorb.png'
-set yrange [0:5000]
-# set autoscale y
+# set yrange [0:5000]
+set autoscale y
 # set format y '%.1f'
 set ylabel 'Temperature [mK]'
 plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:11 t 'Sorb',\
 
 set output '/home/mathias/Data/Plots/DRtempsAll.png'
-set yrange [0:1000]
+# set yrange [0:1000]
+set autoscale y
 # set format y '%.1f'
 set ylabel 'Temperature [mK]'
 plot '/home/mathias/Data/DRtemps.txt' u 1:11 t 'Sorb',\
