@@ -29,7 +29,8 @@ set timefmt '%d/%m/%Y %H:%M:%S'
 set format x "%d/%m %H:%M"
 
 set output '/home/mathias/Data/Plots/DRlogPs.png'
-# set yrange [0:1]
+set autoscale y
+# set yrange [0:1.1]
 plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:3 t 'P2?',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:5 t 'P3?',\
@@ -37,17 +38,19 @@ plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:3 t 'P2?',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:7 t 'P5'
 
 set output '/home/mathias/Data/Plots/DRlogDumps.png'
-# set yrange [0:1]
+set autoscale y
+# set yrange [0:1.1]
 plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:9 t 'Dump 20 l'
 
 set output '/home/mathias/Data/Plots/DRlogPIVCStill.png'
-# set autoscale y
+set autoscale y
 plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:16 t 'P (still)'
 
 set terminal pngcairo size 1920,1080 enhanced font 'Verdana,20'
 set output '/home/mathias/Data/Plots/DRlogAll.png'
+set yrange [0:1.1]
 plot '/home/mathias/Data/DRlog.txt' u 1:3 t 'P2?',\
 	 '/home/mathias/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
 	 '/home/mathias/Data/DRlog.txt' u 1:5 t 'P3?',\
