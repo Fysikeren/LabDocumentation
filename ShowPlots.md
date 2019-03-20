@@ -7,65 +7,51 @@ They can also be seen on <http://www.nbi.dk/~ljt123/>.
 
 ### Recent, coils only
 
-![The last 360 data points, with only the temperature of the coils
-shown.](http://www.nbi.dk/~ljt123/Figures/magnetTempRecentCoils.png)
+![The last 360 data points, with only the temperature of the coils shown.](http://www.nbi.dk/~ljt123/Figures/magnetTempRecentCoils.png)
 
 ### Recent, below 15 K
 
-![The last 360 data points, on a scale going to 15
-K.](http://www.nbi.dk/~ljt123/Figures/magnetTempRecent015K.png)
+![The last 360 data points, on a scale going to 15 K.](http://www.nbi.dk/~ljt123/Figures/magnetTempRecent015K.png)
 
 ### Recent, full scale
 
-![The last 360 data points, on a scale going to 300
-K.](http://www.nbi.dk/~ljt123/Figures/magnetTempRecent300K.png)
+![The last 360 data points, on a scale going to 300 K.](http://www.nbi.dk/~ljt123/Figures/magnetTempRecent300K.png)
 
 ### All times
 
-![All data points, on a scale going to 300
-K.](http://www.nbi.dk/~ljt123/Figures/magnetTempAll300K.png)
+![All data points, on a scale going to 300 K.](http://www.nbi.dk/~ljt123/Figures/magnetTempAll300K.png)
 
 ## Dilution fridge temperatures
 
 ### Recent temperatures
 
-![The last 360 data points, showing the four temperatures from the
-dilution
-refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsRecent.png)
+![The last 360 data points, showing the four temperatures from the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsRecent.png)
 
 ### Recent resistances
 
-![The last 360 data points, showing the resistance i ohm of the four
-resistors in the dilution
-refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsOhmRecent.png)
+![The last 360 data points, showing the resistance i ohm of the four resistors in the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsOhmRecent.png)
 
 ### All temperatures
 
-![All data points, showing the four temperatures from the dilution
-refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtemps.png)
+![All data points, showing the four temperatures from the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtemps.png)
 
 ### All resistances
 
-![All data points, showing the resistance i ohm of the four resistors in
-the dilution
-refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsOhm.png)
+![All data points, showing the resistance i ohm of the four resistors in the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsOhm.png)
 
 ## Dilution fridge logs
 
 ### Recent pressures in the helium system
 
-![The last 60 data points, showing the pressures in the helium
-system.](http://www.nbi.dk/~ljt123/Figures/DRlogPs.png)
+![The last 60 data points, showing the pressures in the helium system.](http://www.nbi.dk/~ljt123/Figures/DRlogPs.png)
 
 ### Recent pressures in the dumps
 
-![The last 60 data points, showing the pressures in the
-dumps.](http://www.nbi.dk/~ljt123/Figures/DRlogDumps.png)
+![The last 60 data points, showing the pressures in the dumps.](http://www.nbi.dk/~ljt123/Figures/DRlogDumps.png)
 
 ### Recent pressures in the IVC and still
 
-![The last 60 data points, showing the pressures in the IVC and
-still.](http://www.nbi.dk/~ljt123/Figures/DRlogPIVCStill.png)
+![The last 60 data points, showing the pressures in the IVC and still.](http://www.nbi.dk/~ljt123/Figures/DRlogPIVCStill.png)
 
 ### All data
 
