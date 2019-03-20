@@ -29,6 +29,9 @@ They can also be seen on <http://www.nbi.dk/~ljt123/>.
 ### Recent still temperatures
 ![The last 360 data points, showing the two temperature in the still](http://www.nbi.dk/~ljt123/Figures/DRtempsStill.png)
 
+### Recent sorb temperatures
+![The last 360 data points, showing the two temperature in the sorb](http://www.nbi.dk/~ljt123/Figures/DRtempsSorb.png)
+
 ### All temperatures
 ![All data points, showing the four temperatures in the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsAll.png)
 
