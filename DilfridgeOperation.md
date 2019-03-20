@@ -6,6 +6,9 @@
 
 ## Cooling from a room temperature
 
+If the magnet cryostat is a room temperature when the DR is inserted, you may simply start the magnet cooling while pumping on the helium system.
+When the magnet reaches 4 K, the DR mixing chamber will reach about 400 mK, and the still about 1.7 K.
+
 ## Cooling to dilution temperatures
 
 ## Settings for 20 mK
