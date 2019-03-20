@@ -23,21 +23,17 @@ They can also be seen on <http://www.nbi.dk/~ljt123/>.
 
 ## Dilution fridge temperatures
 
-### Recent temperatures
+### Recent mixing chamber temperatures
+![The last 360 data points, showing the two temperatures in the mixing chamber](http://www.nbi.dk/~ljt123/Figures/DRtempsMC.png)
 
-![The last 360 data points, showing the four temperatures from the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsRecent.png)
-
-### Recent resistances
-
-![The last 360 data points, showing the resistance i ohm of the four resistors in the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsOhmRecent.png)
+### Recent still temperatures
+![The last 360 data points, showing the two temperature in the still](http://www.nbi.dk/~ljt123/Figures/DRtempsStill.png)
 
 ### All temperatures
-
-![All data points, showing the four temperatures from the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtemps.png)
+![All data points, showing the four temperatures in the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsAll.png)
 
 ### All resistances
-
-![All data points, showing the resistance i ohm of the four resistors in the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsOhm.png)
+![All data points, showing the resistance of the four resistors in the dilution refrigerator.](http://www.nbi.dk/~ljt123/Figures/DRtempsAllOhm.png)
 
 ## Dilution fridge logs
 
