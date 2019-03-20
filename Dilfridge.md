@@ -4,7 +4,7 @@ The dilfridge in the lab is an _MCK50-100_ from _Leiden Cryogenics_.
 
 ## Control from PC
 
-On the *LeidenDR* PC (see [Computers in the lab](LabComputers.md)) is a Labview VI that dupicates the front panel of the DR (though with a few differences to the real version).
+On the *LeidenDR* PC (see [Computers in the lab](LabComputers.md)) is a Labview VI that duplicates the front panel of the DR (though with a few differences to the real version).
 
 ![The Labview program that emulates the front panel on the dilution fridge](Figures/LeidenPanel.png)
 
@@ -15,7 +15,7 @@ The trap is cooled in liquid nitrogen, and gas is lead through it.
 Oxygen and nitrogen will then condense and be absorbed by the trap, cleaning the helium.
 
 The valves are mounted inside the cabinet, and flexible tubes lead to the trap, which is placed next to the cabinet.
-At the trap, extra valves a mounted, also labelled *4* and *5* ensuring that the connection to the trap may be closed properly, even if there is a slight leak in the cabinet-mounted *4* and *5*.
+At the trap, extra valves are mounted, also labelled *4* and *5* ensuring that the connection to the trap may be closed properly, even if there is a slight leak in the cabinet-mounted *4* and *5*.
 
 The trap is placed in a dewar, which should be kept with liquid nitrogen, ensuring that the trap is always covered in nitrogen.
 
