@@ -43,7 +43,7 @@ plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:($15/1000) t 'P (IVC)',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:($16/1000) t 'P (still)'
 
 set output '/home/mathias/Data/Plots/DRlogAll.png'
-set yrange [0:1.1]
+set logscale y 10
 plot '/home/mathias/Data/DRlog.txt' u 1:3 t 'P2',\
 	 '/home/mathias/Data/DRlog.txt' u 1:4 t 'P (condenser line)',\
 	 '/home/mathias/Data/DRlog.txt' u 1:5 t 'P3',\
