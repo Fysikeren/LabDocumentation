@@ -51,11 +51,6 @@ plot '/home/mathias/Data/DRlog.txt' u 1:3 t 'P2',\
 	 '/home/mathias/Data/DRlog.txt' u 1:7 t 'P5',\
 	 '/home/mathias/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
 	 '/home/mathias/Data/DRlog.txt' u 1:9 t 'Dump 20 l',\
-	 '/home/mathias/Data/DRlog.txt' u 1:10 t '??',\
-	 '/home/mathias/Data/DRlog.txt' u 1:11 t '??',\
-	 '/home/mathias/Data/DRlog.txt' u 1:12 t '??',\
-	 '/home/mathias/Data/DRlog.txt' u 1:13 t '??',\
-	 '/home/mathias/Data/DRlog.txt' u 1:14 t '??',\
 	 '/home/mathias/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
 	 '/home/mathias/Data/DRlog.txt' u 1:16 t 'P (still)'
 
