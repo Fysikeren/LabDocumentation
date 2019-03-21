@@ -39,8 +39,8 @@ plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
 	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:9 t 'Dump 20 l'
 
 set output '/home/mathias/Data/Plots/DRlogPIVCStill.png'
-plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
-	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:16 t 'P (still)'
+plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:($15/1000) t 'P (IVC)',\
+	 '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:($16/1000) t 'P (still)'
 
 set output '/home/mathias/Data/Plots/DRlogAll.png'
 set yrange [0:1.1]
@@ -51,7 +51,7 @@ plot '/home/mathias/Data/DRlog.txt' u 1:3 t 'P2',\
 	 '/home/mathias/Data/DRlog.txt' u 1:7 t 'P5',\
 	 '/home/mathias/Data/DRlog.txt' u 1:8 t 'Dump 70 l',\
 	 '/home/mathias/Data/DRlog.txt' u 1:9 t 'Dump 20 l',\
-	 '/home/mathias/Data/DRlog.txt' u 1:15 t 'P (IVC)',\
-	 '/home/mathias/Data/DRlog.txt' u 1:16 t 'P (still)'
+	 '/home/mathias/Data/DRlog.txt' u 1:($15/1000) t 'P (IVC)',\
+	 '/home/mathias/Data/DRlog.txt' u 1:($16/1000) t 'P (still)'
 
 # pause -1 "Hit any key to continue"
