@@ -5,7 +5,6 @@ reset
 set terminal pngcairo size 1024,576 enhanced font 'Verdana,12'
 
 # Define axis:
-# remove border on top and right and set color to gray
 set style line 11 lc rgb '#808080' lt 1
 set tics nomirror
 
