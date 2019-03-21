@@ -24,8 +24,7 @@ set ylabel 'Pressure'
 set autoscale y
 set format y '%1.0s %cbar'
 
-# When plotting, I divide the x values by 3600 to get the times in hours.
-# For the "recent" plots, I use only the last 360 values, which should correspond to the last hour (since LabView saves the values roughly every ten seconds).
+# For the "recent" plots, I use only the last 60 values.
 
 set output '/home/mathias/Data/Plots/DRlogPs.png'
 plot '< tail -n 60 /home/mathias/Data/DRlog.txt' u 1:3 t 'P2',\
