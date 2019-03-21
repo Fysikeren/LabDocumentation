@@ -1,8 +1,8 @@
 #!/usr/bin/gnuplot
 reset
 
-set terminal pngcairo size 1920,1080 enhanced font 'Verdana,20'
-# set terminal pngcairo size 1024,576 enhanced font 'Verdana,20'
+# set terminal pngcairo size 1920,1080 enhanced font 'Verdana,20'
+set terminal pngcairo size 1024,576 enhanced font 'Verdana,12'
 
 # define axis
 # remove border on top and right and set color to gray
@@ -30,38 +30,42 @@ set output '/home/mathias/Data/Plots/DRtempsMC.png'
 # set yrange [0:500]
 set autoscale y
 # set format y '%.1f'
-set ylabel 'Temperature [mK]'
-plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:13 t 'MC 1',\
-	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:14 t 'MC 2',\
+set format y '%1.1s %cK'
+set ylabel 'Temperature'
+plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:($13/1000) t 'MC 1',\
+	 '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:($14/1000) t 'MC 2',\
 
 set output '/home/mathias/Data/Plots/DRtempsStill.png'
 # set yrange [0:2000]
 set autoscale y
 # set format y '%.1f'
-set ylabel 'Temperature [mK]'
-plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:12 t 'Still',\
+set format y '%1.1s %cK'
+set ylabel 'Temperature'
+plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:($12/1000) t 'Still',\
 
-set output '/home/mathias/Data/Plots/DRtempsSorb.png'
-# set yrange [0:5000]
-set autoscale y
-# set format y '%.1f'
-set ylabel 'Temperature [mK]'
-plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:11 t 'Sorb',\
+# set output '/home/mathias/Data/Plots/DRtempsSorb.png'
+# # set yrange [0:5000]
+# set autoscale y
+# # set format y '%.1f'
+# set ylabel 'Temperature [mK]'
+# plot '< tail -n 360 /home/mathias/Data/DRtemps.txt' u 1:($11/1000) t 'Sorb',\
 
 set output '/home/mathias/Data/Plots/DRtempsAll.png'
 # set yrange [0:1000]
 set autoscale y
 # set format y '%.1f'
-set ylabel 'Temperature [mK]'
-plot '/home/mathias/Data/DRtemps.txt' u 1:11 t 'Sorb',\
-	 '/home/mathias/Data/DRtemps.txt' u 1:12 t 'Still',\
-	 '/home/mathias/Data/DRtemps.txt' u 1:13 t 'MC 1',\
-	 '/home/mathias/Data/DRtemps.txt' u 1:14 t 'MC 2',\
+set format y '%1.1s %cK'
+set ylabel 'Temperature'
+plot '/home/mathias/Data/DRtemps.txt' u 1:($11/1000) t 'Sorb',\
+	 '/home/mathias/Data/DRtemps.txt' u 1:($12/1000) t 'Still',\
+	 '/home/mathias/Data/DRtemps.txt' u 1:($13/1000) t 'MC 1',\
+	 '/home/mathias/Data/DRtemps.txt' u 1:($14/1000) t 'MC 2',\
 
 set output '/home/mathias/Data/Plots/DRtempsAllOhm.png'
 set autoscale y
 # set format y '%.0f'
-set ylabel 'Resistance [Ω]'
+set ylabel 'Resistance'
+set format y '%1.0s %cΩ'
 plot '/home/mathias/Data/DRtemps.txt' u 1:3 t 'Sorb',\
 	 '/home/mathias/Data/DRtemps.txt' u 1:4 t 'Still',\
 	 '/home/mathias/Data/DRtemps.txt' u 1:5 t 'MC 1',\
