@@ -21,7 +21,7 @@ set xtics rotate
 set xlabel 'Time'
 
 set autoscale y
-set format y '%1.1s %cK'
+set format y '%1.2s %cK'
 set ylabel 'Temperature'
 
 # For the "recent" plots, I use only the last 360 values.
