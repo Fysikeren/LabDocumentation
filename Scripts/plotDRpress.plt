@@ -28,7 +28,7 @@ set format y '%1.0s %cbar'
 
 set output '/home/mathias/Data/Plots/DRpressPs.png'
 plot '< tail -n 60 /home/mathias/Data/DRpress.txt' u 1:3 t 'P2',\
-	 '< tail -n 60 /home/mathias/Data/DRpress.txt' u 1:4 t 'P (condenser line)',\
+	 '< tail -n 60 /home/mathias/Data/DRpress.txt' u 1:($4*4) t 'P (condenser line)',\
 	 '< tail -n 60 /home/mathias/Data/DRpress.txt' u 1:5 t 'P3',\
 	 '< tail -n 60 /home/mathias/Data/DRpress.txt' u 1:6 t 'P4',\
 	 '< tail -n 60 /home/mathias/Data/DRpress.txt' u 1:7 t 'P5'
@@ -44,7 +44,7 @@ plot '< tail -n 60 /home/mathias/Data/DRpress.txt' u 1:($15/1000) t 'P (IVC)',\
 set output '/home/mathias/Data/Plots/DRpressAll.png'
 set logscale y 10
 plot '/home/mathias/Data/DRpress.txt' u 1:3 t 'P2',\
-	 '/home/mathias/Data/DRpress.txt' u 1:4 t 'P (condenser line)',\
+	 '/home/mathias/Data/DRpress.txt' u 1:($4*4) t 'P (condenser line)',\
 	 '/home/mathias/Data/DRpress.txt' u 1:5 t 'P3',\
 	 '/home/mathias/Data/DRpress.txt' u 1:6 t 'P4',\
 	 '/home/mathias/Data/DRpress.txt' u 1:7 t 'P5',\
